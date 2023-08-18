@@ -1,0 +1,1 @@
+const widerScreen = document.getElementById(wider-screen)
