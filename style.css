@@ -19,7 +19,7 @@ p {
 .header-container h1 {
     font-weight: 700;
     font-size: 1rem;
-    padding-left: 1em;
+    padding-left: .75em;
 }
 
 .title,
@@ -36,7 +36,6 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    max-height: 60px;
 }
 
 ul {
@@ -92,7 +91,7 @@ li {
     cursor: pointer;
 }
 
-.hidden {
+#hidden {
     display: none;
 }
 
@@ -125,7 +124,7 @@ footer {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 
-    .hidden {
+    #hidden {
         display: block;
     }
 
