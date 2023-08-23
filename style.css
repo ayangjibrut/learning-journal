@@ -77,7 +77,7 @@ li {
     padding-bottom: 1em;
 }
 
-#hidden {
+#hidden-container {
     display: none;
 }
 
@@ -97,6 +97,9 @@ footer {
 /* HAMBURGER */
 
 .navbar {
+    position: fixed;
+    width: 100%;
+    background-color: whitesmoke;
     min-height: 50px;
     display: flex;
     justify-content: space-between;
@@ -158,12 +161,16 @@ footer {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 
-    #hidden {
+    #hidden-container {
         display: block;
     }
 
     .view-more {
         display: none;
+    }
+
+    .navbar {
+        position: relative;
     }
 }
 
@@ -193,9 +200,11 @@ footer {
         flex-direction: column;
         background:rgb(38, 38, 38, .7);
         width: 100%;
+        min-height: 100vh;
         text-align: center;
         transition: 0.3s;
         padding: 1em 0;
+        overflow: hidden;
     }
 
     .nav-item {

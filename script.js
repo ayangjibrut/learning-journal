@@ -6,18 +6,18 @@ hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active")
 })
 
-navMenu.addEventListener("click", () => {
-    hamburger.classList.remove("active")
-    navMenu.classList.remove("active")
-})
-
-// document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+// navMenu.addEventListener("click", () => {
 //     hamburger.classList.remove("active")
 //     navMenu.classList.remove("active")
-// }))
+// })
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active")
+    navMenu.classList.remove("active")
+}))
 
 const viewMore = document.getElementById("view-more")
-const hidden = document.getElementById("hidden") 
+const hidden = document.getElementById("hidden-container") 
 
 viewMore.addEventListener("click", function() {
     hidden.style.display = "block"
