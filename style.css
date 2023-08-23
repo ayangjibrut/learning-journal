@@ -147,7 +147,6 @@ footer {
 }
 
 /* MEDIA QUERY */
-
 @media (min-width: 576px) {
     .container-media-query {
         display: block;
@@ -167,10 +166,6 @@ footer {
 
     .view-more {
         display: none;
-    }
-
-    .navbar {
-        position: relative;
     }
 }
 
