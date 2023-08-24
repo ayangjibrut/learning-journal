@@ -43,7 +43,7 @@ li {
 
 .section-flex {
     display: flex;
-    min-height: 400px;
+    min-height: 450px;
 }
 
 .section-item-flex {
@@ -148,7 +148,7 @@ footer {
 
 /* MEDIA QUERY */
 @media (min-width: 576px) {
-    .container-media-query {
+    .media-query-container {
         display: block;
         margin: 0 auto;
         max-width: 1024px;
@@ -166,6 +166,10 @@ footer {
 
     .view-more {
         display: none;
+    }
+
+    .navbar {
+        max-width: 1024px;
     }
 }
 
