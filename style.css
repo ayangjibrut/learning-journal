@@ -75,10 +75,27 @@ li {
     text-align: center;
     cursor: pointer;
     padding-bottom: 1em;
+    transition: 0.7s ease;
 }
 
-#hidden-container {
+.view-more:hover {
+    color: dodgerblue;
+}
+
+/* VIEW MORE ISSUE! */
+
+.grid-container .blog {
     display: none;
+}
+
+.grid-container .blog:nth-child(1),
+.grid-container .blog:nth-child(2),
+.grid-container .blog:nth-child(3) {
+    display: block;
+}
+
+.grid-container .blog {
+    overflow: hidden;
 }
 
 /* FOOTER */
